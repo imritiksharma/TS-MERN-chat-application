@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom/client';
 
 // Application ----------------------------------
 
-// import './index.css';
+import './index.css';
 
 import App from './App';
 

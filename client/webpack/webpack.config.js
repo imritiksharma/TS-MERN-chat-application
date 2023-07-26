@@ -17,7 +17,16 @@ module.exports = {
 						loader: "babel-loader",
 					}
 				]
-			}
+			},
+			{
+				test: /\.(css|sass|scss)$/,
+				include: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules'),],
+				use: [
+					{loader: 'style-loader'}, 
+					{loader: 'css-loader'}, 
+					{loader: 'postcss-loader'}
+				],
+			},
 		]
 	},
 	output: {
